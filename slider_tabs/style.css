@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #5372f0;
+}
+.wrapper {
+	background: #fff;
+	padding: 35px;
+	overflow-x: hidden;
+	max-width: 1000px;
+	border-radius: 13px;
+	position: relative;
+}
+.icon {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon:first-child {
+	left: 0;
+	justify-content: flex-start;
+	background: linear-gradient(90deg, #fff 70%, transparent);
+}
+.icon:last-child {
+	right: 0;
+	justify-content: flex-end;
+	background: linear-gradient(-90deg, #fff 70%, transparent);
+}
+.icon i {
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	font-size: 1.2rem;
+	cursor: pointer;
+	line-height: 55px;
+	border-radius: 50%;
+	background: #d8d5f2;
+}
+.icon:first-child i {
+	margin-left: 15px;
+}
+.icon:last-child i {
+	margin-right: 15px;
+}
+.wrapper .tabs-box {
+	display: flex;
+	list-style-type: none;
+	gap: 12px;
+}
+.tab {
+	white-space: nowrap;
+	font-size: 1.18rem;
+	background: #f5f4fd;
+	padding: 13px 20px;
+	border-radius: 30px;
+	border: 1px solid #d8d5f2;
+}
