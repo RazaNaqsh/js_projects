@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Rock+Salt&family=Rubik+Marker+Hatch&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+.nav {
+	background: rgb(56, 25, 56);
+	padding: 10px;
+	height: 5vh;
+	color: rgb(212, 190, 190);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Rubik Marker Hatch", cursive;
+}
+.gameContainer {
+	/* background-color: YELLOW; */
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	font-family: "Merienda", cursive;
+}
+.container {
+	font-family: "Rock Salt", cursive;
+	display: grid;
+	grid-template-columns: repeat(3, 10vw);
+	grid-template-rows: repeat(3, 10vw);
+}
+.box {
+	border: 2px solid black;
+	font-size: 4vw;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box:hover {
+	background-color: rgb(233, 79, 233);
+}
+.gameInfo {
+	padding: 0 34px;
+}
+.imgbox img {
+	display: none;
+}
